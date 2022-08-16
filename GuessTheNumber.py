@@ -35,8 +35,7 @@ def main():
 
     # Ask the user to play again
     play_again = input(
-        "You ran out of guesses. The correct number was " + '\033[1m' + str(correct_number) + '\033[0m'
-        + " Do want to try again? (y/n)\n")
+        "You ran out of guesses. The correct number was " + str(correct_number) + " Do want to try again? (y/n)\n")
     if play_again == "y":
         main()
     elif play_again == "n":
